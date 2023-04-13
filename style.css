@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.body{
+}
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 20px;
+}
+
+#haeder {
+  background: rgba(0, 91, 193, 0.6);
+  position: relative;
+  padding: 30px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+.haeder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.nav-bar {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-bar a {
+  color: white;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+#hero {
+  min-height: 100vh;
+  background: url(./images/Rectangle\ 2\ \(1\).png) no-repeat center/ cover;
+  overflow: hidden;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  max-width: 595px;
+  padding-top: 250px;
+  gap: 40px;
+  z-index: 20;
+  position: relative;
+}
+
+.content h1 {
+  font-size: 48px;
+  color: white;
+  font-family: "Oswald", sans-serif;
+}
+.content p {
+  color: white;
+  font-size: 18px;
+}
+.content button {
+  max-width: 160px;
+  border: 3px solid white;
+  background: transparent;
+  color: white;
+  padding: 20px;
+  font-size: 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+  gap: 40px;
+}
+.animation {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 440px;
+  height: 100vh;
+  background: rgba(0, 91, 193, 0.6);
+  animation: hero-animation 1.5s linear infinite alternate;
+  z-index: 0;
+}
+@keyframes hero-animation {
+    0%{
+    transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(1150px);
+
+    }
+}
